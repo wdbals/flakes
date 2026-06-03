@@ -33,6 +33,7 @@
           cargo-tauri
           rustc
           rustfmt
+          nodejs_22
           bun
         ];
 
