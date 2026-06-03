@@ -19,7 +19,6 @@
         gdk-pixbuf
         glib
         dbus
-        openssl_3
         librsvg
       ];
     in
@@ -38,7 +37,7 @@
         ];
 
         # Dependencias a enlazar
-        buildInputs = libraries;
+        buildInputs = libraries ++ [ pkgs.openssl_3 ];
 
         shellHook = ''
           # Enlaza las librerías dinámicas para que Fedora las encuentre al ejecutar el binario
